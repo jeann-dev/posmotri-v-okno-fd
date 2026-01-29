@@ -234,6 +234,7 @@ ol {
   height: 27px;
   appearance: none;
   cursor: pointer;
+  color: #fff;
 }
 
 .search-form__textfield::placeholder {
@@ -301,9 +302,13 @@ ol {
   width: 390px;
   height: 34px;
 }
+ 
+.search-form__pseudo-checkbox:hover + .search-form__label-text,
+.search-form__label-text:hover {
+  border-bottom: 1px solid #fff;
+}
 
-.button:hover, 
-.search-form__label-text:hover, 
+.button:hover,
 .content__video-card-description-container:hover {
   text-decoration: underline;
 }
