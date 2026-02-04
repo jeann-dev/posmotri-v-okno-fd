@@ -127,8 +127,13 @@ ol {
   flex-direction: column;
 }
 
+ul li:first-child {
+  padding-top: 2px;
+  padding-left: 2px;
+}
+
 .content__list-item {
-  padding: 2px;
+  padding-left: 2px;
 }
 
 .content__video-card {
@@ -139,7 +144,7 @@ ol {
 
 .content__video-card-thumbnail {
   min-width: 194px;
-  height: 99px;
+  height: 103px;
   object-fit: cover;
   object-position: center;
   flex-grow: 0;
@@ -302,7 +307,8 @@ ol {
 
 .search-form__pseudo-checkbox:hover + .search-form__label-text,
 .search-form__label-text:hover {
-  border-bottom: 1px solid #fff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .button:hover,
